@@ -136,7 +136,7 @@ window.addEventListener('scroll', () => {
 
 // Add current year to footer
 const currentYear = new Date().getFullYear();
-const footerText = document.querySelector('.footer-bottom p');
-if (footerText) {
-    footerText.innerHTML = footerText.innerHTML.replace('2026', currentYear);
+const yearSpan = document.getElementById('currentYear');
+if (yearSpan) {
+    yearSpan.textContent = currentYear;
 }
